@@ -40,9 +40,9 @@
                 <version>2.8.0</version>
                 <configuration>
                     <schemaVersion>v2</schemaVersion>
-                    <subscriptionId></subscriptionId>
-                    <resourceGroup>greeting2-1673640359861-rg</resourceGroup>
-                    <appName>greeting2-1673640359861</appName>
+                    <subscriptionId>9720b373-4b77-41b1-b243-69070a33f6e0</subscriptionId>
+                    <resourceGroup>greeting2</resourceGroup>
+                    <appName>greeting2</appName>
                     <pricingTier>B1</pricingTier>
                     <region>eastus</region>
                     <runtime>
