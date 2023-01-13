@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author ganaranjo
  */
-//@RestController
+@RestController
 public class GreetingController {
     private static final String TEMPLATE = "Hola, %s!";
 
