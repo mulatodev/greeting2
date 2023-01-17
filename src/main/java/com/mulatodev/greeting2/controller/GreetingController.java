@@ -11,12 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class GreetingController {
-    private static final String TEMPLATE = "Bienvenido, %1!, %2";
+    private static final String TEMPLATE = "Bienvenido %1$s!" + System.lineSeparator() +"Hoy es: %2$s.";
 
     @GetMapping("/")
     public String greeting(@RequestParam(value = "name", defaultValue = "mulato") String name){
 
         Date fecha = new Date();
-        return String.format(TEMPLATE, name, "Son las " + fecha.toString());
+        
+        String response = String.format(TEMPLATE, name, fecha.toString());
+        
+        return response;
     }
 }
